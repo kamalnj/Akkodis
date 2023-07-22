@@ -1,4 +1,4 @@
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,23 +30,24 @@
 </head>
 <body>
   <div class="bg-slate-900">
-    <header class="absolute bg-slate-900 inset-x-0 top-0 z-50">
-      <nav class="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
+    <header class="fixed bg-slate-900 inset-x-0 top-0 z-50">
+      <nav class=" flex items-center justify-between p-4 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
             <img class="h-8 w-auto" src="akkodis-white-v2.png" alt="">
           </a>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-          <a href="#" class="text-sm font-bold duration-500	 hover:text-white leading-6 text-amber-500">ABOUT US</a>
-          <a href="#" class="text-sm font-bold duration-500 hover:text-white leading-6 text-amber-500">SERVICES</a>
-          <a href="#" class="text-sm font-bold duration-500 hover:text-white leading-6 text-amber-500">CONTACT</a>
+          <a href="#about" class="text-sm font-bold duration-500 hover:text-white leading-6 text-amber-500">ABOUT US</a>
+          <a href="#services" class="text-sm font-bold duration-500 hover:text-white leading-6 text-amber-500">SERVICES</a>
+          <a href="#contact" class="text-sm font-bold duration-500 hover:text-white leading-6 text-amber-500">CONTACT</a>
           
         </div>
       </nav>
       
     </header>
-  <section>    <div class="relative isolate px-6 pt-14 lg:px-8">
+  <section>    
+    <div class="relative isolate px-6 pt-14 lg:px-8">
       <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
         <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
       </div>
@@ -63,8 +64,8 @@
     </div>
   </div>
 </section>
-
-<div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+<section class="About" id="about">
+  <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
   <div class="absolute inset-0 -z-10 overflow-hidden">
     <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true">
       <defs>
@@ -108,6 +109,159 @@
     </div>
   </div>
 </div>
+</section>
+
+<section class="Services" id="services">
+  <div class="bg-gray-50">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+      <h2 class="mb-16 text-6xl font-bold text-center text-gray-900">Our Services</h2>
+
+      <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+        <div class="group relative">
+          <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1  sm:h-64">
+            <img src="avl_consulting_services.jpg.jpeg" alt="" class="h-full w-full object-cover object-center">
+          </div>
+          <h3 class="mt-6 text-xl mb-3 font-semibold text-gray-500">
+            <a href="#">
+              <span class="absolute inset-0"></span>
+              Consulting
+            </a>
+          </h3>
+          <p class="text-base font-normal text-gray-900">Akkodis’ consulting services involve our highly skilled professionals for design, delivery, and run of innovative solutions for your organization. With operations in over 30 countries across 4 continents we can quickly meet you where you are.
+
+            We leverage our deep knowledge of your business to offer you expertise tailored to your needs, supporting you in scaling your capacity, accelerating innovation across your teams, and speeding up your products’ time-to-market.
+            
+            Our Consulting framework covers the entire project management process for you - ideation, design, validation and implementation, so your organization gets the most out of our resources.
+            </p>
+        </div>
+        <div class="group relative">
+          <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1  sm:h-64">
+            <img src="Consulting-Internship.png" alt="" class="h-full w-full object-cover object-center">
+          </div>
+          <h3 class="mt-6 text-xl mb-3 font-semibold text-gray-500">
+            <a href="#">
+              <span class="absolute inset-0"></span>
+              Solutions
+            </a>
+          </h3>
+          <p class="text-base font-normal text-gray-900">Akkodis capitalizes on our cross-sector IT, digital & engineering know-how to offer you a comprehensive range of expertise, cutting across seven key industries and seven key technologies for your business agility.
+
+            To support local needs & global scalability, we can adapt the right delivery modes that suits you best: in country, near-shore, and off-shore.
+            
+            We continuously invest in our Research & Innovation labs, building competencies for next-generation advancements in technology.</p>
+        </div>
+        <div class="group relative">
+          <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1  sm:h-64">
+            <img src="Millenials-meeting-2.jpg" alt="" class="h-full w-full object-cover object-center">
+          </div>
+          <h3 class="mt-6 text-xl mb-3 font-semibold text-gray-500">
+            <a href="#">
+              <span class="absolute inset-0"></span>
+              Talent
+            </a>
+          </h3>
+          <p class="text-base font-normal text-gray-900">Akkodis connects you with the talent you need by leveraging our multi-national network of over 5 million pre-qualified candidates.
+
+            We can rapidly source IT and engineering talent to connect you with the best people for the job, where and when you need them. <br>
+            
+            <span>Shorten your hiring timelines with our Talent Contract Management services. <br>
+            Reduce your costs of talent acquisition with our Talent Contract-to-hire & Contract-to-perm services. <br>
+            Find your best fit using our Passive Recuiting Techniques. <br>
+            Maximize human resource utilization by choosing our Recruitment Process Outsourcing. <br>
+            Get the most out of our global coverage in niche IT & Engineering market with our managed services.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ </section>
+
+<section class="Contact" id="contact">
+  <div class="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+  <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
+    <div class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+  <div class="mx-auto max-w-2xl text-center">
+    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact Us</h2>
+  </div>
+  <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+    <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+      <div>
+        <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
+        <div class="mt-2.5">
+          <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        </div>
+      </div>
+      <div>
+        <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
+        <div class="mt-2.5">
+          <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        </div>
+      </div>
+      <div class="sm:col-span-2">
+        <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
+        <div class="mt-2.5">
+          <input type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        </div>
+      </div>
+      <div class="sm:col-span-2">
+        <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+        <div class="mt-2.5">
+          <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        </div>
+      </div>
+
+      <div class="sm:col-span-2">
+        <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+        <div class="mt-2.5">
+          <textarea name="message" id="message" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+        </div>
+      </div>
+     
+    <div class="mt-10">
+      <button type="submit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Submit</button>
+    </div>
+  </form>
+</div>
+</section>
+
+<footer class="bg-slate-900 text-white text-center py-8">
+  <div class="mb-10"> 
+    <p class="font-semibold text-amber-500">Visit us</p>
+  <div class="hidden lg:flex lg:gap-x-12 justify-center">
+    <a href="https://www.linkedin.com/company/akka-technologies/" target="_blank"><svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-5 w-5"
+      fill="currentColor"
+      viewBox="0 0 24 24">
+      <path
+        d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+    </svg></a>
+    <a href="https://www.youtube.com/user/AKKATechnologies1" target="_blank"><svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-7 w-5"
+      fill="currentColor"
+      viewBox="0 0 24 24">
+      <path
+        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+    </svg></a>
+    <a href="https://twitter.com/akka_tech" target="_blank"><svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-7 w-5"
+      fill="currentColor"
+      viewBox="0 0 24 24">
+      <path
+        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+    </svg></a>
+  </div>
+</div>
+
+  <p">&copy; 2023 Akkodis. All rights reserved.</p>
+</footer>
+
+
+
 
 
   
@@ -124,5 +278,6 @@
     })
   </script>
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+  <script src="site.js"></script>
 </body>
 </html>
