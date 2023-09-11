@@ -4,7 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akkodis</title>
+  <link rel="icon" type="images/x-icon" href="AKKODIS-removebg-preview.png" />
   <link rel="stylesheet" href="site.css">
+  <script src="site.js"></script>
   <link
   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
   rel="stylesheet" />
@@ -12,21 +14,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
 <script src="https://cdn.tailwindcss.com/3.3.0"></script>
-<script>
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      fontFamily: {
-        sans: ["Roboto", "sans-serif"],
-        body: ["Roboto", "sans-serif"],
-        mono: ["ui-monospace", "monospace"],
-      },
-    },
-    corePlugins: {
-      preflight: false,
-    },
-  };
-</script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
   <div class="bg-slate-900">
@@ -41,7 +29,8 @@
           <a href="#about" class="text-sm font-bold duration-500 hover:text-white leading-6 text-amber-500">ABOUT US</a>
           <a href="#services" class="text-sm font-bold duration-500 hover:text-white leading-6 text-amber-500">SERVICES</a>
           <a href="#contact" class="text-sm font-bold duration-500 hover:text-white leading-6 text-amber-500">CONTACT</a>
-          
+          <a href="careers.html" class="text-sm font-bold duration-500 hover:text-white leading-6 text-amber-500">CAREERS</a>
+
         </div>
       </nav>
       
@@ -102,7 +91,7 @@
               <span class="text-2xl"><strong class="text-4xl font-semibold text-amber-500  ">What we do : <br> </strong><br> We accelerate innovation and business performance for the world’s largest industrial groups. By anticipating market challenges as well as responding to them, AKKODIS catalyzes our customers’ innovation processes and improves time-to-market for their digital offerings.</span>
             </li>
             <li class="flex gap-x-3">
-              <span class="text-2xl"><strong class="text-4xl font-semibold text-amber-500">Our approach :<br></strong> <br> AKKODIS is unique positioning enables us to boost our clients’ performance through innovation, digitization and cross-sector expertise. Our know-how spans the entire product life cycle from design to manufacturing and in-service support, building on a specialist digital skill set. .</span>
+              <span class="text-2xl"><strong class="text-4xl font-semibold text-amber-500">Our approach :<br></strong> <br> AKKODIS is unique positioning enables us to boost our clients’ performance through innovation, digitization and cross-sector expertise. Our know-how spans the entire product life cycle from design to manufacturing and in-service support, building on a specialist digital skill set.</span>
             </li>
         </div>
       </div>
@@ -111,71 +100,33 @@
 </div>
 </section>
 
-<section class="Services" id="services">
-  <div class="bg-gray-50">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-      <h2 class="mb-16 text-6xl font-bold text-center text-gray-900">Our Services</h2>
-
-      <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
-        <div class="group relative">
-          <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1  sm:h-64">
-            <img src="avl_consulting_services.jpg.jpeg" alt="" class="h-full w-full object-cover object-center">
-          </div>
-          <h3 class="mt-6 text-xl mb-3 font-semibold text-gray-500">
-            <a href="#">
-              <span class="absolute inset-0"></span>
-              Consulting
-            </a>
-          </h3>
-          <p class="text-base font-normal text-gray-900">Akkodis’ consulting services involve our highly skilled professionals for design, delivery, and run of innovative solutions for your organization. With operations in over 30 countries across 4 continents we can quickly meet you where you are.
-
-            We leverage our deep knowledge of your business to offer you expertise tailored to your needs, supporting you in scaling your capacity, accelerating innovation across your teams, and speeding up your products’ time-to-market.
-            
-            Our Consulting framework covers the entire project management process for you - ideation, design, validation and implementation, so your organization gets the most out of our resources.
+  <section class="mb-32 container my-24 mx-auto md:px-6" id="services">
+    <div class="flex flex-wrap">
+      <div class="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
+        <div class="flex lg:py-12">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/people/033.jpg"
+            class="w-full rounded-lg lg:ml-[50px] z-[10]" alt="image" />
+        </div>
+      </div>
+      <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+        <div class="flex h-full items-center rounded-lg bg-slate-900 p-6 text-center text-amber-500 lg:pl-12 lg:text-left">
+          <div class="lg:pl-12">
+            <h2 class="mb-6 text-4xl text-white font-bold">
+              Our Services
+            </h2>
+            <p class="mb-6 pb-2 lg:pb-0 font-semibold" >
+              As Technology & Talent are the biggest enablers of innovation and also the biggest challenges in today’s global economies, Akkodis is set to drive your digital transformation by putting together the right technology infrastructure for you and offer you deployable digital talent at scale.
             </p>
-        </div>
-        <div class="group relative">
-          <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1  sm:h-64">
-            <img src="Consulting-Internship.png" alt="" class="h-full w-full object-cover object-center">
+            <a href="services.html">
+            <button type="button" 
+              class="rounded-full border-2 border-neutral-50 px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200">
+              Read More
+            </button></a>
           </div>
-          <h3 class="mt-6 text-xl mb-3 font-semibold text-gray-500">
-            <a href="#">
-              <span class="absolute inset-0"></span>
-              Solutions
-            </a>
-          </h3>
-          <p class="text-base font-normal text-gray-900">Akkodis capitalizes on our cross-sector IT, digital & engineering know-how to offer you a comprehensive range of expertise, cutting across seven key industries and seven key technologies for your business agility.
-
-            To support local needs & global scalability, we can adapt the right delivery modes that suits you best: in country, near-shore, and off-shore.
-            
-            We continuously invest in our Research & Innovation labs, building competencies for next-generation advancements in technology.</p>
-        </div>
-        <div class="group relative">
-          <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1  sm:h-64">
-            <img src="Millenials-meeting-2.jpg" alt="" class="h-full w-full object-cover object-center">
-          </div>
-          <h3 class="mt-6 text-xl mb-3 font-semibold text-gray-500">
-            <a href="#">
-              <span class="absolute inset-0"></span>
-              Talent
-            </a>
-          </h3>
-          <p class="text-base font-normal text-gray-900">Akkodis connects you with the talent you need by leveraging our multi-national network of over 5 million pre-qualified candidates.
-
-            We can rapidly source IT and engineering talent to connect you with the best people for the job, where and when you need them. <br>
-            
-            <span>Shorten your hiring timelines with our Talent Contract Management services. <br>
-            Reduce your costs of talent acquisition with our Talent Contract-to-hire & Contract-to-perm services. <br>
-            Find your best fit using our Passive Recuiting Techniques. <br>
-            Maximize human resource utilization by choosing our Recruitment Process Outsourcing. <br>
-            Get the most out of our global coverage in niche IT & Engineering market with our managed services.</span></p>
         </div>
       </div>
     </div>
-  </div>
-</div>
- </section>
+  </section>
 
 <section class="Contact" id="contact">
   <div class="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
@@ -185,18 +136,18 @@
   <div class="mx-auto max-w-2xl text-center">
     <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact Us</h2>
   </div>
-  <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+  <form onsubmit="sendEmail()" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
     <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
       <div>
         <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
         <div class="mt-2.5">
-          <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          <input type="text" name="first name" id="first name" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
         </div>
       </div>
       <div>
         <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
         <div class="mt-2.5">
-          <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          <input type="text" name="last name" id="last name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
         </div>
       </div>
       <div class="sm:col-span-2">
@@ -229,7 +180,7 @@
 <footer class="bg-slate-900 text-white text-center py-8">
   <div class="mb-10"> 
     <p class="font-semibold text-amber-500">Visit us</p>
-  <div class="hidden lg:flex lg:gap-x-12 justify-center">
+  <div class=" flex space-x-4 justify-center">
     <a href="https://www.linkedin.com/company/akka-technologies/" target="_blank"><svg
       xmlns="http://www.w3.org/2000/svg"
       class="h-5 w-5"
@@ -263,21 +214,28 @@
 
 
 
-
-  
-
-  
   
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <script>
-    var typed = new Typed(".auto-type",{
-      strings : ["AKKODIS","THE FUTURE"],
-     typeSpeed : 150,
-     backSpeed : 150,
-     loop : false
-    })
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
   <script src="site.js"></script>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+       function sendEmail(){
+   Email.send({
+    SecureToken : "f05bb0cd-1994-41f9-81df-622580ee490b",
+    To : 'najikamal100@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "TEST AKKODIS",
+    Body : "First Name:"+document.getElementById("first name").value
+    +"<br> Last Name:"+document.getElementById("last name").value
+    +"<br> Email:"+document.getElementById("email").value
+    +"<br> Company:"+document.getElementById("company").value
+    +"<br> Message:"+document.getElementById("message").value
+
+}).then(
+  message => alert("Message Sent Succesfully")
+);}
+  </script>
 </body>
 </html>
